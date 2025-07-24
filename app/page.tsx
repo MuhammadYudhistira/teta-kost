@@ -74,6 +74,13 @@ export default function PadangKostLanding() {
             // facilities: ["AC", "Wi-Fi", "Shared Bathroom", "Study Area"],
         },
         {
+            image: "/main.jpg",
+            // name: "Bukittinggi Premium",
+            // price: "Rp 1.800.000",
+            // status: "Limited",
+            // facilities: ["AC", "Wi-Fi", "Shared Bathroom", "Study Area"],
+        },
+        {
             image: "/samping.jpg",
             // name: "Bukittinggi Premium",
             // price: "Rp 1.800.000",
@@ -363,10 +370,7 @@ export default function PadangKostLanding() {
                             <div
                                 key={index}
                                 className={cn(
-                                    "overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-[#FAF9F6] border-0 rounded-xl",
-                                    index === rooms.length - 1
-                                        ? "lg:col-span-2"
-                                        : ""
+                                    "overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-[#FAF9F6] border-0 rounded-xl"
                                 )}
                             >
                                 <Image
