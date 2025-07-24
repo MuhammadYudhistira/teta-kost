@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import VideoSection from "@/components/section/VideoSection";
 
 export default function PadangKostLanding() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -381,6 +382,8 @@ export default function PadangKostLanding() {
                 </div>
             </section>
 
+            <VideoSection />
+
             {/* Gallery & Facilities Section */}
             <section id="facilities" className="py-20 bg-[#FAF9F6]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -399,7 +402,7 @@ export default function PadangKostLanding() {
                         {/* Parkir Aman */}
                         <div className="relative group overflow-hidden rounded-2xl">
                             <Image
-                                src="/placeholder.svg?height=400&width=600"
+                                src="/parkiran.jpg"
                                 alt="Parkir Aman"
                                 width={600}
                                 height={400}
@@ -421,7 +424,7 @@ export default function PadangKostLanding() {
                         {/* Jemur Pakaian */}
                         <div className="relative group overflow-hidden rounded-2xl">
                             <Image
-                                src="/placeholder.svg?height=400&width=600"
+                                src="/jemuran.jpg"
                                 alt="Jemur Pakaian"
                                 width={600}
                                 height={400}
@@ -442,7 +445,7 @@ export default function PadangKostLanding() {
                         {/* Dapur Bersama */}
                         <div className="relative group overflow-hidden rounded-2xl">
                             <Image
-                                src="/placeholder.svg?height=400&width=600"
+                                src="/dapur.jpg"
                                 alt="Dapur Bersama"
                                 width={600}
                                 height={400}
@@ -609,7 +612,7 @@ export default function PadangKostLanding() {
                             </div>
                         </div>
 
-                        <div className="space-y-6">
+                        <div className="space-y-6 my-6">
                             <h3 className="text-2xl font-serif font-bold text-[#222222] mb-6">
                                 Titik-Titik Terdekat
                             </h3>
@@ -782,7 +785,7 @@ export default function PadangKostLanding() {
                                         onClick={() => scrollToSection("rooms")}
                                         className="hover:text-white transition-colors"
                                     >
-                                        Room Types
+                                        Kamar
                                     </button>
                                 </li>
                                 <li>
@@ -792,7 +795,7 @@ export default function PadangKostLanding() {
                                         }
                                         className="hover:text-white transition-colors"
                                     >
-                                        Facilities
+                                        Fasilitas
                                     </button>
                                 </li>
                                 <li>
@@ -802,7 +805,7 @@ export default function PadangKostLanding() {
                                         }
                                         className="hover:text-white transition-colors"
                                     >
-                                        Location
+                                        Lokasi
                                     </button>
                                 </li>
                             </ul>
